@@ -1,0 +1,16 @@
+[package]
+name = "mast3r-rs"
+version = "0.1.0"
+edition = "2024"
+description = "Tiny Rust port of MASt3R 3D reconstruction (after mlx-mast3r), on candle"
+license = "Apache-2.0"
+readme = "README.md"
+
+[dependencies]
+anyhow = "1"
+candle-core = { version = "0.11", features = ["metal"] }
+candle-nn = { version = "0.11", features = ["metal"] }
+clap = { version = "4", features = ["derive"] }
+hf-hub = { version = "0.4", default-features = false, features = ["ureq", "rustls-tls"] }
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+nalgebra = "0.34"

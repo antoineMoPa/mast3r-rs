@@ -1,0 +1,5 @@
+/target
+*.ply
+*.safetensors
+images/**
+output/**
